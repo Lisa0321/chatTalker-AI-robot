@@ -53,8 +53,7 @@ table {
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -64,7 +63,6 @@ body {
 
 .index-container {
   max-width: 1120px;
-  height: auto;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -77,10 +75,8 @@ body {
 }
 
 .plan-container {
-  max-width: 1120px;
-  height: auto;
+  width: 80%;
   margin: 0 auto;
-  padding: 0 105.5px;
 }
 
 @media (max-width: 375px) {
@@ -102,6 +98,20 @@ body {
 
 .primary-btn:hover {
   background-color: #FF5D50;
+}
+
+.nav-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #FF5D50;
+  padding: 8px 32px;
+  border-radius: 22px;
+}
+
+.nav-btn:hover {
+  background-color: #56C4C5;
 }
 
 .count-btn {
@@ -126,15 +136,11 @@ body {
 }
 
 .d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .jcsb {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .vh-100 {
@@ -146,9 +152,7 @@ body {
 }
 
 .align-items-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .index-header {
@@ -259,9 +263,11 @@ body {
   }
 }
 
+.banner {
+  align-items: center;
+}
+
 .banner-text {
-  padding-top: 158px;
-  padding-bottom: 157px;
   max-width: 553px;
 }
 
@@ -291,10 +297,7 @@ body {
 
 @media (max-width: 375px) {
   .banner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .banner-text {
     padding: 32px 0;
@@ -361,10 +364,7 @@ body {
 
 @media (max-width: 375px) {
   .social-media {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-bottom: 60px;
   }
   .social-media li {
@@ -397,8 +397,7 @@ body {
 .highlight-card {
   width: 260px;
   border-radius: 12px;
-  -webkit-box-shadow: 0px 2px 10px #00000014;
-          box-shadow: 0px 2px 10px #00000014;
+  box-shadow: 0px 2px 10px #00000014;
   margin: 0 8px;
   background-color: #FFFFFF;
 }
@@ -432,13 +431,8 @@ body {
     margin-bottom: 20px;
   }
   .highlight-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .highlight-card {
     margin: 12px 0px;
@@ -446,30 +440,24 @@ body {
 }
 
 .service {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-between;
 }
 
 @media (max-width: 375px) {
   .service {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 
 .service-list {
   max-width: 520px;
   margin-bottom: 14px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .service-card {
   width: 230px;
-  -webkit-box-shadow: 0px 2px 10px #00000014;
-          box-shadow: 0px 2px 10px #00000014;
+  box-shadow: 0px 2px 10px #00000014;
   padding: 32px 32px 48px 32px;
   margin: 14px;
   border-radius: 12px;
@@ -477,8 +465,7 @@ body {
 }
 
 .service-card img {
-  -webkit-box-shadow: 0px 2px 10px #00000014;
-          box-shadow: 0px 2px 10px #00000014;
+  box-shadow: 0px 2px 10px #00000014;
   padding: 17px;
   border-radius: 50%;
 }
@@ -496,9 +483,7 @@ body {
 
 @media (max-width: 375px) {
   .service-list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin: 48px 0;
   }
   .service-card {
@@ -514,7 +499,7 @@ body {
   font-size: 32px;
   font-weight: bold;
   color: #221E1F;
-  margin: 165px 0 16px 0;
+  margin-bottom: 16px;
 }
 
 .service-detail p {
@@ -559,23 +544,19 @@ body {
     margin-bottom: 38px;
   }
   .review-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
-.review-card {
-  max-width: 352px;
-  -webkit-box-shadow: 0px 2px 10px #00000014;
-          box-shadow: 0px 2px 10px #00000014;
-  border-radius: 12px;
-  background-color: #FFFFFF;
+.review-list {
+  margin: 50px 0;
 }
 
 .review-card {
-  margin: 50px 0;
+  width: 32%;
+  box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  background-color: #FFFFFF;
 }
 
 .review-text {
@@ -584,13 +565,15 @@ body {
   position: relative;
 }
 
-.review-text h3 {
-  font-weight: bold;
-}
-
 .review-text p {
   font-size: 16px;
   color: #221E1F;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #DDDDDD;
+}
+
+.company {
+  font-weight: bold;
 }
 
 .photo {
@@ -599,13 +582,6 @@ body {
   height: auto;
   position: absolute;
   top: -100px;
-}
-
-.border-bottom {
-  width: auto;
-  height: 2px;
-  border-bottom: 1px solid #DDDDDD;
-  margin: 24px 0;
 }
 
 .rate P {
@@ -624,7 +600,9 @@ body {
 .footer {
   margin: 0 auto;
   text-align: center;
-  position: relative;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .footer p {
@@ -645,28 +623,6 @@ body {
   }
   .footer a {
     margin-bottom: 60px;
-  }
-}
-
-.footer-img {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg");
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 503px;
-  position: absolute;
-  z-index: -1;
-}
-
-@media (max-width: 375px) {
-  .footer-img {
-    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg");
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    z-index: -1;
   }
 }
 
@@ -784,11 +740,9 @@ body {
 }
 
 .count {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-bottom: 54px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .count li {
@@ -805,8 +759,7 @@ body {
 
 .plan-card {
   width: calc(50% - 21px);
-  -webkit-box-shadow: 0px 2px 10px #00000014;
-          box-shadow: 0px 2px 10px #00000014;
+  box-shadow: 0px 2px 10px #00000014;
   border-radius: 12px;
   padding: 24px;
   background-color: #FFFFFF;
@@ -815,6 +768,8 @@ body {
 .plan-card h3 {
   font-size: 24px;
   font-weight: bold;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #DDDDDD;
 }
 
 .plan-card p {
@@ -823,12 +778,8 @@ body {
 
 @media (max-width: 375px) {
   .plan-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .plan-card {
     width: 100%;
@@ -839,14 +790,13 @@ body {
 
 .plan-card-l {
   margin: 32px 0 24px 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .plan-card-sm {
   background-color: #F5F5F5;
-  padding: 24px 32px;
+  width: 50%;
+  padding: 24px 0px;
   border-radius: 12px;
   font-size: 12px;
   color: #221E1F;
@@ -907,7 +857,7 @@ body {
 .FQA h2 {
   font-size: 32px;
   font-weight: bold;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 375px) {
@@ -920,14 +870,18 @@ body {
   }
 }
 
+.Qs-list {
+  box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  margin: 8px 0;
+}
+
 .Qs {
+  display: block;
+  text-decoration: none;
   font-size: 18px;
   color: #221E1F;
-  -webkit-box-shadow: 0px 2px 10px #00000014;
-          box-shadow: 0px 2px 10px #00000014;
-  border-radius: 12px;
   padding: 16px 32px;
-  margin: 8px 0;
 }
 
 .Qs img {
@@ -940,4 +894,3 @@ body {
     padding: 16px;
   }
 }
-/*# sourceMappingURL=all.css.map */
