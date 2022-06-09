@@ -99,9 +99,10 @@
         max-width: 130px;
     }
 }
+.banner{
+    align-items: center;
+}
 .banner-text{
-    padding-top: 158px;
-    padding-bottom: 157px;
     max-width: 553px;
     h2{
         color: $blue;
@@ -254,7 +255,7 @@
     }
 }
 .service{
-    justify-content: space-around;
+    justify-content: space-between;
 }
 @media(max-width: 375px){
     .service{
@@ -303,7 +304,7 @@
         font-size: $fontSize-bigtitle;
         font-weight: bold;
         color: $black;
-        margin: 165px 0 16px 0;
+        margin-bottom: 16px;
     }
     p{
         font-size: $fontSize-title;
@@ -347,26 +348,28 @@
         flex-direction: column;
     }
 }
+.review-list{
+    margin: 50px 0;
+}
 .review-card{
-    max-width: 352px;
+    width: 32%;
     box-shadow: $shadow;
     border-radius: 12px;
     background-color: #FFFFFF;
-}
-.review-card{
-    margin: 50px 0;
 }
 .review-text{
     max-width: 288px;
     margin: 48px 32px 24px 32px;
     position: relative;
-    h3{
-        font-weight: bold;
-    }
     p{
         font-size: $fontSize-base;
         color: $black;
+        padding-bottom: 24px;
+        border-bottom: 2px solid #DDDDDD;
     }
+}
+.company{
+    font-weight: bold;
 }
 .photo{
     border-radius: 50%;
@@ -374,12 +377,6 @@
     height: auto;
     position: absolute;
     top: -100px;
-}
-.border-bottom{
-    width: auto;
-    height: 2px;
-    border-bottom: 1px solid #DDDDDD;
-    margin: 24px 0;
 }
 .rate{
     P{
@@ -396,7 +393,9 @@
 .footer{
     margin: 0 auto;
     text-align: center;
-    position: relative;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg");
+    background-size: cover;
+    background-position: center center;
     p{
         font-size: $fontSize-bigtitle;
         font-weight: bold;
@@ -416,26 +415,6 @@
         a{
             margin-bottom: 60px;
         }
-    }
-}
-.footer-img{
-    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg");
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 503px;
-    position: absolute;
-    z-index: -1;
-}
-@media(max-width: 375px){
-    .footer-img{
-        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg");
-        background-size: cover;
-        background-position: center center;
-        width: 100%;
-        height: 50%;
-        position: absolute;
-        z-index: -1;
     }
 }
 .copyright{
@@ -564,6 +543,8 @@
     h3{
         font-size: 24px;
         font-weight: bold;
+        padding-bottom: 24px;
+        border-bottom: 2px solid #DDDDDD;
     }
     p{
         font-size: $fontSize-base;
@@ -586,7 +567,8 @@
 }
 .plan-card-sm{
     background-color: #F5F5F5;
-    padding: 24px 32px;
+    width: 50%;
+    padding: 24px 0px;
     border-radius: 12px;
     font-size: $fontSize-small;
     color: $black;
@@ -637,7 +619,7 @@
     h2{
         font-size: $fontSize-bigtitle;
         font-weight: bold;
-        padding-bottom: 40px;
+        margin-bottom: 40px;
     }
 }
 @media(max-width: 375px){
@@ -649,13 +631,17 @@
         }
     }
 }
-.Qs{
-    font-size: $fontSize-title;
-    color: $black;
+.Qs-list{
     box-shadow: $shadow;
     border-radius: 12px;
-    padding: 16px 32px;
     margin: 8px 0;
+}
+.Qs{
+    display: block;
+    text-decoration: none;
+    font-size: $fontSize-title;
+    color: $black;
+    padding: 16px 32px;
     img{
         max-width: 20px;
     }
@@ -666,7 +652,6 @@
         padding: 16px;
     }
 }
-
 
 
 

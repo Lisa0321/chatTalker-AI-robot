@@ -10,7 +10,6 @@ body{
 }
 .index-container{
     max-width: 1120px;   
-    height: auto;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -21,10 +20,8 @@ body{
     }
 }
 .plan-container{
-    max-width: 1120px;   
-    height: auto;
+    width: 80%;
     margin: 0 auto;
-    padding: 0 105.5px;
 }
 @media(max-width: 375px){
     .plan-container{
@@ -42,6 +39,18 @@ body{
     border-radius: 22px;
     &:hover{
         background-color: #FF5D50;
+    }
+}
+.nav-btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: $fontSize-base;
+    color: #FFFFFF;
+    background-color: #FF5D50;
+    padding: 8px 32px;
+    border-radius: 22px;
+    &:hover{
+        background-color: #56C4C5;
     }
 }
 .count-btn{
