@@ -115,7 +115,7 @@
     align-items: center;
 }
 .banner-text{
-    max-width: 553px;
+    width: 50%;
     h2{
         color: $blue;
         font-size: $fontSize-title;
@@ -145,10 +145,15 @@
     .banner-img{
         width: 70%;
     }
+    .banner-text{
+        width: 65%;
+        margin: 100px 0px;
+    }
 }
 @media(max-width: 375px){
     .banner-text{
-        padding: 32px 0;
+        width: 100%;
+        margin: 32px 0;
         h2{
             font-size: $fontSize-base;
         }
@@ -209,6 +214,7 @@
 @media(max-width: 768px){
     .social-media{
         flex-direction: column;
+        align-items: center;
         li{
             margin: 12px 0;
         }
@@ -221,6 +227,7 @@
     .social-media{
         margin-bottom: 60px;
         li{
+            width: 100%;
             img{
                 width: 60px; 
             }
@@ -291,8 +298,12 @@
         align-items: center;
     }
     .highlight-card{
+        width: 86%;
         margin: 12px 0px;
     }
+}
+.service{
+    justify-content: space-around;
 }
 .service-list{
     max-width: 520px;
@@ -324,6 +335,7 @@
 @media(max-width: 768px){
     .service{
         flex-direction: column-reverse;
+        align-items: center;
     }
     .service-list{
         justify-content: space-around;
@@ -339,7 +351,7 @@
     }
 }
 .service-detail{
-    max-width: 400px;
+    width: 40%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -355,9 +367,16 @@
         margin-bottom: 24px;
     }
 }
+@media(max-width: 768px){
+    .service-detail{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+}
 @media(max-width: 375px){
     .service-detail{
-        max-width: 100%;
         text-align: center;
         margin-bottom: 20px;
         h2{
@@ -617,14 +636,14 @@
         font-size: 24px;
         font-weight: bold;
         padding-bottom: 24px;
+        margin-bottom: 24px;
         border-bottom: 2px solid #DDDDDD;
     }
     p{
         font-size: $fontSize-base;
-        margin-top: 24px;
     }
 }
-@media(max-width: 375px){
+@media(max-width: 768px){
     .plan-list{
         flex-wrap: wrap;
         flex-direction: column;
@@ -669,7 +688,8 @@
     padding: 33px 0px;
 }
 .point-list{
-    margin-bottom: 16px;
+    width: 80%;
+    margin: 16px auto;
     img{
         max-width: 16px;
     }
@@ -677,11 +697,11 @@
 .point-text{
     font-size: $fontSize-base;
     padding: 8px 0 8px 16px;
+    text-align: left;
 }
 @media(max-width: 375px){
     .point-text{
         font-size: 14px;
-        text-align: left;
     }
 }
 .FQA{

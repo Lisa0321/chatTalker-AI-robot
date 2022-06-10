@@ -273,7 +273,7 @@ body {
 }
 
 .banner-text {
-  max-width: 553px;
+  width: 50%;
 }
 
 .banner-text h2 {
@@ -308,11 +308,16 @@ body {
   .banner-img {
     width: 70%;
   }
+  .banner-text {
+    width: 65%;
+    margin: 100px 0px;
+  }
 }
 
 @media (max-width: 375px) {
   .banner-text {
-    padding: 32px 0;
+    width: 100%;
+    margin: 32px 0;
   }
   .banner-text h2 {
     font-size: 16px;
@@ -379,6 +384,7 @@ body {
 @media (max-width: 768px) {
   .social-media {
     flex-direction: column;
+    align-items: center;
   }
   .social-media li {
     margin: 12px 0;
@@ -391,6 +397,9 @@ body {
 @media (max-width: 375px) {
   .social-media {
     margin-bottom: 60px;
+  }
+  .social-media li {
+    width: 100%;
   }
   .social-media li img {
     width: 60px;
@@ -470,8 +479,13 @@ body {
     align-items: center;
   }
   .highlight-card {
+    width: 86%;
     margin: 12px 0px;
   }
+}
+
+.service {
+  justify-content: space-around;
 }
 
 .service-list {
@@ -509,6 +523,7 @@ body {
 @media (max-width: 768px) {
   .service {
     flex-direction: column-reverse;
+    align-items: center;
   }
   .service-list {
     justify-content: space-around;
@@ -526,7 +541,7 @@ body {
 }
 
 .service-detail {
-  max-width: 400px;
+  width: 40%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -545,9 +560,16 @@ body {
   margin-bottom: 24px;
 }
 
+@media (max-width: 768px) {
+  .service-detail {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 375px) {
   .service-detail {
-    max-width: 100%;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -843,15 +865,15 @@ body {
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 24px;
+  margin-bottom: 24px;
   border-bottom: 2px solid #DDDDDD;
 }
 
 .plan-card p {
   font-size: 16px;
-  margin-top: 24px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .plan-list {
     flex-wrap: wrap;
     flex-direction: column;
@@ -904,7 +926,8 @@ body {
 }
 
 .point-list {
-  margin-bottom: 16px;
+  width: 80%;
+  margin: 16px auto;
 }
 
 .point-list img {
@@ -914,12 +937,12 @@ body {
 .point-text {
   font-size: 16px;
   padding: 8px 0 8px 16px;
+  text-align: left;
 }
 
 @media (max-width: 375px) {
   .point-text {
     font-size: 14px;
-    text-align: left;
   }
 }
 
