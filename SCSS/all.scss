@@ -5,7 +5,7 @@
 .index-header{
     position: relative;
 }
-@media(max-width: 375px){
+@media(max-width: 768px){
     .index-header{
         height: auto;
     }
@@ -50,6 +50,17 @@
     top: 2640px;
     left: 50px;
 }
+@media(max-width: 768px){
+    .bg-home{
+        position: absolute;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
+        background-position: center center;
+        width: calc(334px * 1.5);
+        height: calc(245px * 1.5);
+        right: 120px;
+        top: 650px;
+    }
+}
 @media(max-width: 375px){
     .bg-home{
         position: absolute;
@@ -85,7 +96,8 @@
     margin: 0 auto;
     padding: 24px 16px;
 }
-@media(max-width: 375px){
+
+@media(max-width: 768px){
     .navbar{
         border-bottom: 2px solid #FFD153;
         padding: 16px 20px;
@@ -125,10 +137,16 @@
     width: 50%;
     height: auto;
 }
-@media(max-width: 375px){
+@media(max-width: 768px){
     .banner{
         flex-direction: column;
+        align-items: center;
     }
+    .banner-img{
+        width: 70%;
+    }
+}
+@media(max-width: 375px){
     .banner-text{
         padding: 32px 0;
         h2{
@@ -188,14 +206,23 @@
         color: $gray;
     }
 }
-@media(max-width: 375px){
+@media(max-width: 768px){
     .social-media{
         flex-direction: column;
-        margin-bottom: 60px;
         li{
             margin: 12px 0;
+        }
+        h3{
+            margin: 16px 0;
+        }
+    }   
+}    
+@media(max-width: 375px){
+    .social-media{
+        margin-bottom: 60px;
+        li{
             img{
-                max-width: 60px; 
+                width: 60px; 
             }
         }
         h3{
@@ -216,11 +243,13 @@
         margin-bottom: 48px;
     }
 }
+.highlight-list{
+    flex-wrap: wrap;
+}
 .highlight-card{
-    width: 260px;
+    width: 23%;
     border-radius: 12px;
     box-shadow: $shadow;
-    margin: 0 8px;
     background-color: #FFFFFF;
     img{
         border-radius: 12px 12px 0 0;
@@ -236,6 +265,15 @@
         color: $black;
         margin: 16px 16px 24px 16px;
     }   
+}
+@media(max-width: 768px){
+    .highlight-list{
+        justify-content: center;
+    }
+    .highlight-card{
+        width: 45%;
+        margin: 16px;
+    }
 }
 @media(max-width: 375px){
     .highlight{
@@ -254,14 +292,6 @@
     }
     .highlight-card{
         margin: 12px 0px;
-    }
-}
-.service{
-    justify-content: space-between;
-}
-@media(max-width: 375px){
-    .service{
-        flex-direction: column-reverse;
     }
 }
 .service-list{
@@ -291,13 +321,21 @@
         width: 166px;
     }
 }
-@media(max-width: 375px){
+@media(max-width: 768px){
+    .service{
+        flex-direction: column-reverse;
+    }
     .service-list{
-        justify-content: center;
+        justify-content: space-around;
         margin: 48px 0;
     }
     .service-card{
         margin: 12px 0;
+    }
+}
+@media(max-width: 375px){
+    .service-list{
+        justify-content: center;
     }
 }
 .service-detail{
@@ -341,7 +379,7 @@
         text-align: center;
     }
 }
-@media(max-width: 375px){
+@media(max-width: 768px){
     .review{
         margin: 12px 0 44px 0;
         h2{
@@ -351,6 +389,7 @@
     }
     .review-list{
         flex-direction: column;
+        align-items: center;
     }
 }
 .review-list{
@@ -361,11 +400,17 @@
     box-shadow: $shadow;
     border-radius: 12px;
     background-color: #FFFFFF;
+    margin-top: 50px;
+}
+@media(max-width: 768px){
+    .review-card{
+        width: 50%;
+        margin-bottom: 80px;
+    }
 }
 @media(max-width: 375px){
     .review-card{
         width: 100%;
-        margin-bottom: 80px;
     }
 }
 .review-text{
@@ -457,6 +502,16 @@
     background-position: right;
     top: 876px;
 }
+@media(max-width: 768px){
+    .bg-img-l{
+        top: 80px;
+    }
+    .ellipse-orange-l{
+        width: 96px;
+        height: 204px;
+        top: 1200px;
+    }
+}
 @media(max-width: 375px){
     .bg-img-l{
         background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg");
@@ -479,6 +534,11 @@
     z-index: -2;
     border-radius: 0px 0px 0px 300px;
 }
+@media(max-width: 768px){
+    .bg-gray{
+        top: 80px;
+    }
+}
 @media(max-width: 375px){
     .bg-gray{
         max-width: 375px;
@@ -486,7 +546,7 @@
     }
 }
 .plan-header{
-    padding: 0 139px;
+    padding: 0 100px;
     margin-bottom: 100px;
 }
 @media(max-width: 375px){
@@ -577,11 +637,11 @@
 }
 .plan-card-l{
     margin: 32px 0 24px 0;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .plan-card-sm{
     background-color: #F5F5F5;
-    width: 50%;
+    width: 40%;
     padding: 24px 0px;
     border-radius: 12px;
     font-size: $fontSize-small;
@@ -613,16 +673,15 @@
     img{
         max-width: 16px;
     }
-    p{
-        font-size: $fontSize-base;
-        padding: 8px 0 8px 16px;
-    }
+}
+.point-text{
+    font-size: $fontSize-base;
+    padding: 8px 0 8px 16px;
 }
 @media(max-width: 375px){
-    .point-list{
-        p{
-            font-size: 14px;
-        }
+    .point-text{
+        font-size: 14px;
+        text-align: left;
     }
 }
 .FQA{
@@ -648,7 +707,6 @@
     margin: 8px 0;
 }
 .Qs{
-    display: block;
     text-decoration: none;
     font-size: $fontSize-title;
     color: $black;
