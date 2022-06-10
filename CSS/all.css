@@ -79,6 +79,13 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 375px) {
+  .plan-container {
+    max-width: 375px;
+    padding: 0 20px;
+  }
+}
+
 .primary-btn {
   display: inline-block;
   text-decoration: none;
@@ -526,19 +533,13 @@ body {
     margin: 48px 0;
   }
   .service-card {
-    width: 46%;
     margin: 12px 0;
   }
 }
 
 @media (max-width: 375px) {
   .service-list {
-    width: 100%;
     justify-content: center;
-  }
-  .service-card {
-    width: 70%;
-    margin: 12px 0;
   }
 }
 

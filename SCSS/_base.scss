@@ -23,6 +23,12 @@ body{
     width: 80%;
     margin: 0 auto;
 }
+@media(max-width: 375px){
+    .plan-container{
+        max-width: 375px;
+        padding: 0 20px;
+    }
+}
 .primary-btn{
     display: inline-block;
     text-decoration: none;
