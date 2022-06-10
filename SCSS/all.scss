@@ -302,19 +302,16 @@
         margin: 12px 0px;
     }
 }
-.service{
-    justify-content: space-around;
-}
 .service-list{
-    max-width: 520px;
+    width: 60%;
     margin-bottom: 14px;
     flex-wrap: wrap;
 }
 .service-card{
-    width: 230px;
+    width: 40%;
     box-shadow: $shadow;
     padding: 32px 32px 48px 32px;
-    margin: 14px;
+    margin: 8px;
     border-radius: 12px;
     background-color: #FFFFFF;;
     img{
