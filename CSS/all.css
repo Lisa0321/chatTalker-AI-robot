@@ -533,6 +533,7 @@ body {
 
 @media (max-width: 375px) {
   .service-list {
+    width: 100%;
     justify-content: center;
   }
   .service-card {
